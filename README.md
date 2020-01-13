@@ -62,6 +62,38 @@
  }
 ```
 
+## 本文Net示例 src/Net_ApiTest.cs
+```
+/**
+  * @api {get} /getUserInfo 获取用户信息
+  * @apiDescription 获取用户信息
+  * @apiGroup .Net
+  *
+  * @apiParam {String} Token 登录用户令牌
+  *
+  * @apiParamExample {string} 请求参数格式:
+  *    ?token=XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+  *
+  * @apiVersion 1.0.0
+  * @apiErrorExample {json} 错误返回值:
+  *     {
+  *        "code": 10003,
+  *        "msg": "令牌验证异常!", 
+  *        "status": "fail"
+  *     }
+  * @apiSuccessExample {json} 正确返回值:
+  *     {
+  *   "code": 0,
+  *   "msg": "获取数据成功",,
+  * 	 "data": { "username":"123456" }		 
+  *   "status": "1",
+  *   }
+  */
+  public string getUserInfo(string name , string pwd)
+  {
+      return "";
+  }
+```
 
 
 参考官方文档[http://apidocjs.com](http://apidocjs.com/)
